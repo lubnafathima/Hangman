@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Kavoon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main {
+  background-color: #483198;
+}
+
+.header {
+  min-height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.title {
+  height: 3rem;
+  color: #ffffff;
+  font-family: "Kavoon", serif;
+}
+
+.menu {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hint {
+  color: #483198;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 3rem;
+  font-family: "Kavoon", serif;
+  font-size: 1.2rem;
+  padding: 0.3rem 1.2rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+}
+
+.heart {
+  color: #db6f6f;
+  font-size: 2rem;
+}
+
+.container {
+  width: 100%;
+  min-height: 84.3vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aside {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+.grid-key {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5rem;
+}
+.grid-item {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+  margin: 0.75rem;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #483198;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+
+.game-container {
+  /* min-height: 15rem; */
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5rem;
+  margin-bottom: 2rem;
+}
+
+.grid-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tile {
+  border-radius: 1.375rem;
+  background: #a492e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-size: 1.5em;
+  font-weight: 700;
+  height: 4.6875rem;
+  width: 4.6875rem;
+  color: #fff;
+}
+
+.hint-tooltip {
+  position: absolute;
+  background-color: #a492e3;
+  color: #fff;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  top: 100%;
+}
+
+.health-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 1rem;
+  margin-bottom: 10px;
+  margin-top: 0.5rem;
+  padding: .2rem 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.health-bar-inner {
+  height: 100%;
+  background-color: #DB6F6F;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  background-color: #483198;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30rem;
+  height: 15rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.popup-content p {
+  font-size: 1.5rem;
+  font-family: "Kavoon", serif;
+  color: #fff;
+}
+
+.popup button {
+  padding: 10px 20px;
+  background-color: #e5e5e5;
+  color: #483198;
+  border: none;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-family: "Kavoon", serif;
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -ms-border-radius: 2.5rem;
+  -o-border-radius: 2.5rem;
+}
+
+.popup button:hover {
+  background-color: #fff;
+}
